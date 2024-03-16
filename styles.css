@@ -1,4 +1,32 @@
-h1 {
-    font-family: sans-serif;
-    color: rgb(29, 78, 171);
+body {
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.container-ul {
+    display: flex;
+    gap: 20px;    
+}
+
+li {
+    list-style: none;    
+}
+
+.container-icons img{    
+    width: 20px;
+    margin-right: 10px;
 }
