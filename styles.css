@@ -1,23 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Days+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Saira+Stencil+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Saira+Stencil+One&display=swap');
 
 body {
   font-family: "Nunito Sans", sans-serif;
   margin: 0;
+  overflow-y: hidden;
 }
 
-#logo {
+h1,
+h2,
+h3 {
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 2px;
+  line-height: 3rem;
+}
+
+#logo {  
   font-family: "Saira Stencil One", sans-serif;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 5px;
 }
 
-.navbar {
+.header-container {
   position: relative;
   color: white;
 }
 
-.navbar video {
+.header-container video {
   width: 100vw;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -32,19 +43,35 @@ body {
   left: 0;
   right: 0;
   background-color: transparent;
+  margin-top: -0.5rem;
 }
 
 .container-ul {
   display: flex;
-  padding: 0;
 }
 
 li {
   list-style: none;
-  margin: 0 1rem;
+  margin: 0 1.2rem;
 }
 
 .container-icons img {
   width: 20px;
-  margin-left: 0.5rem;
+  margin-left: 0.7rem;
+}
+
+.hero-video {
+  position: absolute;
+  bottom: 7rem;
+  margin-left: 3rem;
+}
+
+.hero-video h2 {
+  font-size: 2.5rem;
+  width: 500px;
+  font-weight: 900;
+}
+
+.hero-video p {
+  width: 700px;
 }
