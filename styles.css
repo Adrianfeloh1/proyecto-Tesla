@@ -1,34 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Saira+Stencil+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Days+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Saira+Stencil+One&display=swap");
 
 body {
-    font-family: "Nunito Sans", sans-serif;
-    margin: 0;    
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
 }
 
 #logo {
-    font-family: "Saira Stencil One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  position: relative;
+  color: white;
+}
+
+.navbar video {
+  width: 100vw;
+  object-fit: cover;
 }
 
 .container-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3rem;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
 }
 
 .container-ul {
-    display: flex;    
-    padding: 0;
+  display: flex;
+  padding: 0;
 }
 
 li {
-    list-style: none;
-    margin: 0 1rem;
+  list-style: none;
+  margin: 0 1rem;
 }
 
 .container-icons img {
-    width: 20px;
-    margin-left: 0.5rem;
+  width: 20px;
+  margin-left: 0.5rem;
 }
