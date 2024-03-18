@@ -1,7 +1,8 @@
 body {
   font-family: "Poppins", sans-serif;
-  margin: 0;
-  overflow-y: hidden;
+  margin: 0; 
+  box-sizing: border-box; 
+  overflow-x: hidden;
 }
 
 h1,
@@ -67,7 +68,7 @@ h3 {
 
 .hero-video {
   position: absolute;
-  bottom: 5rem;
+  bottom: 7rem;
   margin-left: 3rem;
 }
 
@@ -78,4 +79,41 @@ h3 {
 
 .hero-video p {
   width: 600px;
+}
+
+.container-main {
+  margin: auto;
+}
+
+.container-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 100vh;
+}
+
+.container-model-x {
+  width: 35vw;
+}
+
+.model-x-hero h2{
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.model-x-hero img{  
+  max-width: 100%;   
+}
+
+.video-model-x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55vw;
+}
+
+.video-model-x video {
+  max-width: 100%;
+  
 }
