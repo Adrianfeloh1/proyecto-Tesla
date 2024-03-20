@@ -21,8 +21,7 @@ h3 {
 
 .container-header {
   position: relative;
-  color: white;
-  margin-bottom: 10rem;
+  color: white;  
 }
 
 .container-nav {
@@ -84,12 +83,9 @@ h3 {
 
 /* ----------------MAIN------------------ */
 
-.container-main {
-  margin: auto;
-}
 
 .container-hero-btn {
-  margin-bottom: 2rem;
+  margin: 7rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;  
@@ -186,7 +182,7 @@ footer {
   color:#C4C3C5;
   display: flex;
   flex-direction: column;
-  margin-top: -5rem;
+  height: 500px;
 }
 
 footer .privacy-tesla {  
@@ -194,15 +190,15 @@ footer .privacy-tesla {
  text-align: center;
  width: 50%;
  margin-bottom: 5rem;
- border: solid 2px;
+ border: solid 5px;
  border-radius: 3px;
  padding: 1rem;
+ 
 }
 
 footer .container-list {
-  justify-content: center;
-  margin: auto;  
-  padding-bottom: 1.8rem;  
+  justify-content: center;   
+  padding-bottom: 1.5rem;  
 }
 
 footer .container-list li a{
