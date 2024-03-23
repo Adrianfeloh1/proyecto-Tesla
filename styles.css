@@ -13,6 +13,8 @@ h3 {
   font-weight: 600;
 }
 
+/*---------------HEADER----------------  */
+
 #logo {
   font-family: "Saira Stencil One", sans-serif;
   font-weight: 400;
@@ -89,7 +91,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 900px;
+  height: 820px;
 }
 
 .section-container {
@@ -177,6 +179,44 @@ h3 {
   color: #C4C3C5;  
 }
 
+/* ------------SOLAR-SECTION-------------- */
+
+.solar-section {
+  background-image: url("./assets/images/Homepage-SolarPanels.avif");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.solar-section-text {
+  text-align: center;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.solar-section-text h2 {
+  font-size: 2.5rem;
+}
+
+.solar-section-text p {
+  margin-top: -2rem;
+}
+
+.solar-section-button {
+  position: absolute;
+  text-align: center;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ---------------FOOTER---------------- */
+
 footer {
   background-color: #121113;
   margin: auto;
@@ -195,7 +235,6 @@ footer .tesla-privacy {
   border-radius: 3px;
   padding: 1rem;
 }
-
 
 footer .nav-list {
   justify-content: center;
