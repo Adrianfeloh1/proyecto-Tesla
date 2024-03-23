@@ -1,13 +1,14 @@
 body {
+
   font-family: "Poppins", sans-serif;
-  margin: 0; 
-  box-sizing: border-box; 
+  margin: 0;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
 h1,
 h2,
-h3 {  
+h3 {
   letter-spacing: 1px;
   font-weight: 600;
 }
@@ -19,18 +20,18 @@ h3 {
   letter-spacing: 10px;
 }
 
-.container-header {
+.header-container {
   position: relative;
-  color: white;  
+  color: white;
 }
 
-.container-nav {
+.nav-container {
   position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 3rem;
-  background-color: transparent;  
+  background-color: transparent;
   top: 0;
   left: 0;
   right: 0;
@@ -40,28 +41,29 @@ h3 {
   cursor: pointer;
 }
 
-.container-header video {
+.header-container video {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  margin-bottom: 5rem;
 }
 
-.container-list {
+.nav-list {
   display: flex;
   padding: 0;
 }
 
-.container-list li {
+.nav-list li {
   list-style: none;
   margin: 0 1rem;
 }
 
-.container-list li a {
+.nav-list li a {
   text-decoration: none;
   color: white;
 }
 
-.container-icons img {
+.icon-container img {
   width: 20px;
   margin-left: 0.7rem;
 }
@@ -83,67 +85,66 @@ h3 {
 
 /* ----------------MAIN------------------ */
 
-
-.container-hero-btn {
-  margin: 7rem 0;
+.hero-button-container { 
   display: flex;
   flex-direction: column;
-  align-items: center;  
-  height: 100vh;    
+  align-items: center;
+  height: 900px;
 }
 
-.container-section {
+.section-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;  
+  gap: 50px;
 }
 
 .reverse {
   display: flex;
-  flex-direction: row-reverse;  
+  flex-direction: row-reverse;
 }
 
-.container-model {
+.model-container {
   width: 30vw;
-  color: #1a1a1a;  
+  color: #1a1a1a;
 }
 
-.model-x-hero h2{
+.model-info h2 {
   text-align: center;
-  font-size: 2.5rem;  
+  font-size: 2.5rem;
 }
 
-.model-x-hero img{  
-  max-width: 100%;   
+.model-info img {
+  max-width: 100%;
 }
 
-.video-model-x {
+.video-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60vw;  
+  width: 60vw;
 }
 
-.video-model-x video {
-  max-width: 100%;  
+.video-container video {
+  width: 1200px;
+  max-width: 100%;
 }
 
-.conteiner-btn button {
+.button-container button {
   width: 280px;
   padding: 12px 40px;
   margin: 10px;
   cursor: pointer;
   font-weight: 700;
   font-size: 1rem;
-  margin: 4rem 0.8rem 0 0.8rem;  
+  margin: 4rem 0.8rem 0 0.8rem;
   border-radius: 3px;
 }
 
 .btn1 {
   background-color: white;
   color: #1a1a1a;
-  border: solid 2px #1a1a1a ;
+  border: solid 2px #1a1a1a;
 }
 
 .btn2 {
@@ -153,7 +154,7 @@ h3 {
 }
 
 .btn1:hover {
-  background-color: #888888;  
+  background-color: #888888;
   border: solid 2px #1a1a1a;
 }
 
@@ -163,44 +164,44 @@ h3 {
   border: solid 2px #1a1a1a;
 }
 
-.btn1, .btn2 {
+.btn1,
+.btn2 {
   transition: background-color 0.4s, color 0.4s;
 }
 
-.cybertruck {
-  background-color: #121113;
-  margin-bottom: 0 ;
+.cybertruck-section {
+  background-color: #121113;  
 }
 
 .model-cybertruck {
-  color: #C4C3C5;;
+  color: #C4C3C5;  
 }
 
 footer {
   background-color: #121113;
   margin: auto;
-  color:#C4C3C5;
+  color: #C4C3C5;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 300px;
 }
 
-footer .privacy-tesla {  
- margin: auto;
- text-align: center;
- width: 50%;
- margin-bottom: 5rem;
- border: solid 5px;
- border-radius: 3px;
- padding: 1rem;
- 
+footer .tesla-privacy {
+  margin: auto;
+  text-align: center;
+  width: 800px;
+  margin-bottom: 3rem;
+  border: solid 5px;
+  border-radius: 3px;
+  padding: 1rem;
 }
 
-footer .container-list {
-  justify-content: center;   
-  padding-bottom: 1.5rem;  
+
+footer .nav-list {
+  justify-content: center;
+  padding-bottom: 1.5rem;
 }
 
-footer .container-list li a{
+footer .nav-list li a {
   color: #C4C3C5;
 }
