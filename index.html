@@ -50,7 +50,8 @@
 
         <p>
           Reciba un nuevo Model S, Model X o Model Y antes del 30 de abril y
-          reciba 5,000 millas Supercharging gratis para compras en efectivo o con tarjeta.
+          reciba 5,000 millas Supercharging gratis para compras en efectivo o
+          con tarjeta.
         </p>
       </div>
     </header>
@@ -225,10 +226,32 @@
         </div>
       </div>
 
+      <form action="/" >
+        <h2>Información de contacto</h2>
+
+        <div class="column-container">
+          <div class="column">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required />
+            <label for="email">Dirección de correo electrónico</label>
+            <input type="email" id="email" name="email" required />
+            
+          </div>
+          <div class="column">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" required />
+            <label for="telefono">Número de teléfono</label>
+            <input type="text" id="telefono" name="telefono" />
+          </div>
+        </div>
+
+        <input type="submit" value="Enviar" />
+      </form>
+
       <section class="solar-section">
         <div class="solar-section-text">
           <h2>Paneles solares</h2>
-          <p>Produzca energía limpia desde su techo</p>          
+          <p>Produzca energía limpia desde su techo</p>
         </div>
         <div class="button-container solar-section-button">
           <button class="btn1">Más Info</button>
@@ -255,7 +278,6 @@
         <li><a href="/">Ubicaciones</a></li>
       </ul>
     </footer>
-
-    <script src="./main.js"></script>
+    
   </body>
 </html>

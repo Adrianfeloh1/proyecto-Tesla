@@ -1,5 +1,4 @@
 body {
-
   font-family: "Poppins", sans-serif;
   margin: 0;
   box-sizing: border-box;
@@ -72,7 +71,7 @@ h3 {
 
 .hero-video {
   position: absolute;
-  bottom: 7rem;
+  bottom: 12rem;
   margin-left: 3rem;
 }
 
@@ -87,7 +86,7 @@ h3 {
 
 /* ----------------MAIN------------------ */
 
-.hero-button-container { 
+.hero-button-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,11 +171,11 @@ h3 {
 }
 
 .cybertruck-section {
-  background-color: #121113;  
+  background-color: #121113;
 }
 
 .model-cybertruck {
-  color: #C4C3C5;  
+  color: #c4c3c5;
 }
 
 /* ------------SOLAR-SECTION-------------- */
@@ -215,12 +214,47 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
-/* ---------------FOOTER---------------- */
+/* ---------------FORM------------------ */
+
+form {
+  margin: 20px auto;
+  height: 100vh;
+  margin-top: 5rem; 
+  width: 42vw;
+}
+
+label {  
+  font-weight: 500;
+  color: #616367;
+  font-size: 0.9rem;  
+}
+
+.column input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color:#F4F4F4 ;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+.column-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  width: 46%;
+  margin: 1rem 0;
+}
+
+/* -------------FOOTER-------------- */
 
 footer {
   background-color: #121113;
   margin: auto;
-  color: #C4C3C5;
+  color: #c4c3c5;
   display: flex;
   flex-direction: column;
   height: 300px;
@@ -242,5 +276,5 @@ footer .nav-list {
 }
 
 footer .nav-list li a {
-  color: #C4C3C5;
+  color: #c4c3c5;
 }
