@@ -226,27 +226,100 @@
         </div>
       </div>
 
-      <form action="/" >
-        <h2>Información de contacto</h2>
+      <section class="section-form">
+        <form action="/">
+          <h2>Información de contacto</h2>
 
-        <div class="column-container">
-          <div class="column">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required />
-            <label for="email">Dirección de correo electrónico</label>
-            <input type="email" id="email" name="email" required />
-            
-          </div>
-          <div class="column">
-            <label for="apellido">Apellido</label>
-            <input type="text" id="apellido" name="apellido" required />
-            <label for="telefono">Número de teléfono</label>
-            <input type="text" id="telefono" name="telefono" />
-          </div>
-        </div>
+          <div class="name-container">
+            <div class="input-container">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
 
-        <input type="submit" value="Enviar" />
-      </form>
+            <div class="input-container">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" required />
+            </div>
+          </div>
+
+          <div class="name-container">
+            <div class="input-container">
+              <label for="email">Dirección de correo electrónico</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="input-container">
+              <label for="phone">Número de teléfono</label>
+              <input type="tel" id="phone" name="phone" list="telslist" />
+            </div>
+
+            <datalist id="telslist">
+              <option value="(+57) "></option>
+              <option value="(+55) "></option>
+              <option value="(+54) "></option>
+              <option value="(+52) "></option>
+              <option value="(+34) "></option>
+              <option value="(+1) "></option>
+              <option value="(+33) "></option>
+              <option value="(+49) "></option>
+              <option value="(+39) "></option>
+              <option value="(+81) "></option>
+              <option value="(+86) "></option>
+              <option value="(+91) "></option>
+              <option value="(+7) "></option>
+              <option value="(+1) "></option>
+              <option value="(+61) "></option>
+              <option value="(+44) "></option>
+              <option value="(+82) "></option>
+              <option value="(+62) "></option>
+              <option value="(+27) "></option>
+            </datalist>
+          </div>
+
+          <div class="input-container">
+            <label for="telefono">Región</label>
+            <select>
+              <option value="1" selected>Colombia</option>
+              <option value="2">Brasil</option>
+              <option value="3">Argentina</option>
+              <option value="4">México</option>
+              <option value="5">España</option>
+              <option value="6">Estados Unidos</option>
+              <option value="7">Francia</option>
+              <option value="8">Alemania</option>
+              <option value="9">Italia</option>
+              <option value="10">Japón</option>
+              <option value="11">China</option>
+              <option value="12">India</option>
+              <option value="13">Rusia</option>
+              <option value="14">Canadá</option>
+              <option value="15">Australia</option>
+              <option value="16">Reino Unido</option>
+              <option value="17">Corea del Sur</option>
+              <option value="18">Indonesia</option>
+              <option value="19">Sudáfrica</option>
+            </select>
+          </div>
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox" name="checkbox" />
+            <label for="checkbox">Mantenerme informado</label>
+            <p>
+              Al hacer clic en "Enviar y continuar", autorizo que Tesla se ponga
+              en contacto conmigo en relación con esta solicitud, así como para
+              entregarme más información sobre los productos, servicios y
+              eventos regionales de Tesla a través de la información de contacto
+              que proporcione. Entiendo que las llamadas o mensajes de texto
+              pueden ser realizados por computadora o mensajes pregrabados. Se
+              aplican las tarifas normales de mensajes y datos. Puedo cancelar
+              la suscripción en cualquier momento en la aplicación de Tesla o en
+              cancelando suscripción.
+            </p>
+          </div>
+
+          <button>Agenda una prueba de manejo</button>
+        </form>
+      </section>
 
       <section class="solar-section">
         <div class="solar-section-text">
@@ -278,6 +351,5 @@
         <li><a href="/">Ubicaciones</a></li>
       </ul>
     </footer>
-    
   </body>
 </html>
