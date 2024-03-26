@@ -90,14 +90,14 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  margin-bottom: 5rem;
 }
 
 .section-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;  
+  gap: 50px;
 }
 
 .reverse {
@@ -174,15 +174,19 @@ h3 {
   background-color: #121113;
 }
 
+.cybertruck-section .button-container {
+  margin-bottom: 5rem;
+}
+
 .model-cybertruck {
   color: #c4c3c5;
 }
 
 /* --------------DEMO-DRIVE--------------- */
 
-.demo-drive {  
-  margin: auto;  
-  width: 700px;  
+.demo-drive {
+  margin: auto;
+  width: 700px;
 }
 
 .demo-drive h2 {
@@ -191,7 +195,7 @@ h3 {
 }
 
 .demo-drive p {
-  color: #616367;  
+  color: #616367;
 }
 
 .demo-drive h3 {
@@ -203,8 +207,8 @@ h3 {
   justify-content: space-between;
 }
 
-.demo-btn-img img{
-  width: 450px;  
+.demo-btn-img img {
+  width: 450px;
 }
 
 .btn-model-container {
@@ -216,28 +220,28 @@ h3 {
 .model-btn {
   padding: 15px 70px;
   margin: 0.5rem 0;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   border: #c4c3c5 2px solid;
   border-radius: 5px;
-  color: #616367;  
+  color: #616367;
   cursor: pointer;
-  transition: border 0.3s, color 0.3s;  
+  transition: border 0.3s, color 0.3s;
 }
 
 .model-btn:hover {
-  border: 2px solid #3E6AE1;  
+  border: 2px solid #3e6ae1;
 }
 
 .search-container {
   position: relative;
 }
 
-.search-input {     
+.search-input {
   padding: 12px 12px 12px 40px;
   outline: 0;
   border-radius: 5px;
   border: none;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   border: #c4c3c5 1px solid;
   width: 285px;
 }
@@ -246,14 +250,14 @@ h3 {
   position: absolute;
   top: 20px;
   left: 10px;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
 }
 
 /* ---------------FORM------------------ */
 
 .section-form {
   display: flex;
-  margin: auto;   
+  margin: auto;
   width: 700px;
   padding: 2rem 0;
 }
@@ -278,12 +282,12 @@ h3 {
 .input-container input {
   padding: 12px;
   margin-bottom: 10px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   border: none;
   border-radius: 5px;
   border: #c4c3c5 1px solid;
   outline: 0;
-  margin-top: 0.5rem;  
+  margin-top: 0.5rem;
   width: 260px;
 }
 
@@ -291,7 +295,7 @@ h3 {
   font-family: "Poppins", sans-serif;
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   border: none;
   border-radius: 5px;
   margin-top: 0.5rem;
@@ -323,11 +327,11 @@ h3 {
 }
 
 form .btn3 {
-  background-color: #3E6AE1;  
+  background-color: #3e6ae1;
   padding: 12px 45px;
   border-radius: 5px;
   font-size: 1rem;
-  color: #F4F4F4;
+  color: #f4f4f4;
   border: none;
   cursor: pointer;
   margin: 2rem 0 4rem 0;
@@ -337,8 +341,6 @@ form .btn3 {
 form .btn3:hover {
   background-color: #1140b6;
 }
-
-
 
 /* ------------SOLAR-SECTION-------------- */
 
@@ -370,13 +372,84 @@ form .btn3:hover {
 .solar-section-button {
   width: 100%;
   position: absolute;
-  text-align: center;  
+  text-align: center;
   top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+/* -------------CHARGE-------------- */
 
+.charge-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+  width: 1200px;
+  margin: auto;
+}
+
+.charge-title {
+  grid-area: 1 / 1 / 2 / 4;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.charge-title h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.charge-title p {
+  font-size: 0.9rem;
+  text-align: center;
+  width: 65%;
+  color: #616367;
+  
+}
+
+.card-1 {
+  grid-area: 2 / 1 / 4 / 2;
+  
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards img {
+  width: 350px;
+  border-radius: 5px;
+}
+
+.cards h4 {
+  font-size: 1.3rem;
+  font-weight: 500;  
+}
+
+.cards p {
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400; 
+  width: 80%; 
+  margin-top: -1rem;  
+  color: #616367;
+}
+.card-2 {
+  grid-area: 2 / 2 / 4 / 3;  
+}
+
+.card-3 {
+  grid-area: 2 / 3 / 4 / 4;
+  
+}
 
 /* -------------FOOTER-------------- */
 
