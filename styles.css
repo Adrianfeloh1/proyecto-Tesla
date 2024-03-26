@@ -90,14 +90,14 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 820px;
+  height: 90vh;
 }
 
 .section-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 50px;  
 }
 
 .reverse {
@@ -217,40 +217,45 @@ h3 {
   padding: 15px 70px;
   margin: 0.5rem 0;
   background-color: #F4F4F4;
-  border: #c4c3c5 1px solid;
+  border: #c4c3c5 2px solid;
   border-radius: 5px;
   color: #616367;  
   cursor: pointer;
-  transition: border 0.3s, color 0.3s;
+  transition: border 0.3s, color 0.3s;  
 }
 
 .model-btn:hover {
-  border: 1px solid #616367;
+  border: 2px solid #3E6AE1;  
 }
 
 .search-container {
   position: relative;
 }
 
-.search {  
-  padding: 12px;
+.search-input {     
+  padding: 12px 12px 12px 40px;
   outline: 0;
   border-radius: 5px;
   border: none;
   background-color: #F4F4F4;
-  border: #dadada 1px solid;
+  border: #c4c3c5 1px solid;
   width: 285px;
+}
+
+.search-container img {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  transform: translateY(-50%); 
 }
 
 /* ---------------FORM------------------ */
 
 .section-form {
   display: flex;
-  margin: auto;
-  height: 100vh;
-  margin-top: 3rem;
+  margin: auto;   
   width: 700px;
-  padding: 0 1rem;
+  padding: 2rem 0;
 }
 
 .name-container {
@@ -276,7 +281,7 @@ h3 {
   background-color: #F4F4F4;
   border: none;
   border-radius: 5px;
-  border: #dadada 1px solid;
+  border: #c4c3c5 1px solid;
   outline: 0;
   margin-top: 0.5rem;  
   width: 260px;
@@ -292,7 +297,7 @@ h3 {
   margin-top: 0.5rem;
   outline: 0;
   width: 285px;
-  border: #dadada 1px solid;
+  border: #c4c3c5 1px solid;
 }
 
 .checkbox-container {
@@ -318,23 +323,22 @@ h3 {
 }
 
 form .btn3 {
-  background-color: #3E6AE1;
-  margin-top: 2rem;
+  background-color: #3E6AE1;  
   padding: 12px 45px;
   border-radius: 5px;
   font-size: 1rem;
   color: #F4F4F4;
   border: none;
   cursor: pointer;
+  margin: 2rem 0 4rem 0;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 form .btn3:hover {
   background-color: #1140b6;
 }
 
-form button {
-  transition: background-color 0.3s, color 0.3s;
-}
+
 
 /* ------------SOLAR-SECTION-------------- */
 
@@ -364,9 +368,9 @@ form button {
 }
 
 .solar-section-button {
+  width: 100%;
   position: absolute;
-  text-align: center;
-  position: absolute;
+  text-align: center;  
   top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -388,7 +392,7 @@ footer {
 footer .tesla-privacy {
   margin: auto;
   text-align: center;
-  width: 800px;
+  width: 60%;
   margin-bottom: 3rem;
   border: solid 5px;
   border-radius: 3px;
