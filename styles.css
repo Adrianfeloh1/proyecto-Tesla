@@ -167,7 +167,7 @@ h3 {
 
 .btn1,
 .btn2 {
-  transition: background-color 0.4s, color 0.4s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .cybertruck-section {
@@ -178,9 +178,24 @@ h3 {
   color: #c4c3c5;
 }
 
-.demo-drive {
+/* --------------DEMO-DRIVE--------------- */
+
+.demo-drive {  
   margin: auto;  
-  width: 700px;
+  width: 700px;  
+}
+
+.demo-drive h2 {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+}
+
+.demo-drive p {
+  color: #616367;  
+}
+
+.demo-drive h3 {
+  font-size: 1.5rem;
 }
 
 .demo-btn-img {
@@ -204,9 +219,28 @@ h3 {
   background-color: #F4F4F4;
   border: #c4c3c5 1px solid;
   border-radius: 5px;
-  color: #444444;
+  color: #616367;  
+  cursor: pointer;
+  transition: border 0.3s, color 0.3s;
 }
 
+.model-btn:hover {
+  border: 1px solid #616367;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search {  
+  padding: 12px;
+  outline: 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #F4F4F4;
+  border: #dadada 1px solid;
+  width: 285px;
+}
 
 /* ---------------FORM------------------ */
 
@@ -242,14 +276,15 @@ h3 {
   background-color: #F4F4F4;
   border: none;
   border-radius: 5px;
-  margin-top: 0.5rem;
+  border: #dadada 1px solid;
   outline: 0;
+  margin-top: 0.5rem;  
   width: 260px;
 }
 
 .input-container select {
   font-family: "Poppins", sans-serif;
-  padding: 12px;
+  padding: 10px;
   margin-bottom: 10px;
   background-color: #F4F4F4;
   border: none;
@@ -257,6 +292,7 @@ h3 {
   margin-top: 0.5rem;
   outline: 0;
   width: 285px;
+  border: #dadada 1px solid;
 }
 
 .checkbox-container {
@@ -297,7 +333,7 @@ form .btn3:hover {
 }
 
 form button {
-  transition: background-color 0.4s, color 0.4s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* ------------SOLAR-SECTION-------------- */
