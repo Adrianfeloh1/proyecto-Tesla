@@ -127,8 +127,8 @@ h3 {
 }
 
 .video-container video {
-  width: 1200px;
-  max-width: 100%;
+  width: 920px;
+  max-width: 1200px;
 }
 
 .button-container button {
@@ -378,28 +378,21 @@ form .btn3:hover {
   transform: translate(-50%, -50%);
 }
 
-/* -------------CHARGE-------------- */
+/* ----------CHARGE-SECTION----------- */
 
 .charge-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  height: 100vh;
-  width: 1200px;
-  margin: auto;
-}
-
-.charge-title {
-  grid-area: 1 / 1 / 2 / 4;  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-.charge-title h3 {
+.charge-title {
+  text-align: center;
+}
+
+.charge-section h3 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
@@ -407,48 +400,38 @@ form .btn3:hover {
 .charge-title p {
   font-size: 0.9rem;
   text-align: center;
-  width: 65%;
   color: #616367;
-  
+  width: 50vw;
 }
 
-.card-1 {
-  grid-area: 2 / 1 / 4 / 2;
-  
+.cards-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .cards {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .cards img {
-  width: 350px;
-  border-radius: 5px;
+  max-width: 350px;
 }
 
 .cards h4 {
   font-size: 1.3rem;
-  font-weight: 500;  
+  font-weight: 500;
 }
 
 .cards p {
   text-align: justify;
   font-size: 0.9rem;
-  font-weight: 400; 
-  width: 80%; 
-  margin-top: -1rem;  
+  font-weight: 400;
+  width: 83%;
+  margin-top: -1rem;
   color: #616367;
-}
-.card-2 {
-  grid-area: 2 / 2 / 4 / 3;  
-}
-
-.card-3 {
-  grid-area: 2 / 3 / 4 / 4;
-  
 }
 
 /* -------------FOOTER-------------- */
