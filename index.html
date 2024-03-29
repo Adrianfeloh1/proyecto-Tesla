@@ -236,12 +236,12 @@
         </div>
         <div class="demo-btn-img">
           <div class="btn-model-container">
-            <button class="model-btn">Model S</button>
-            <button class="model-btn">Model 3</button>
-            <button class="model-btn">Model X</button>
-            <button class="model-btn">Model Y</button>
+            <button class="model-btn" onclick="changeModel('s')">Model S</button>
+            <button class="model-btn" onclick="changeModel('3')">Model 3</button>
+            <button class="model-btn" onclick="changeModel('x')">Model X</button>
+            <button class="model-btn" onclick="changeModel('y')">Model Y</button>
           </div>
-          <img src="./assets/images/menu-s.avif" alt="modelo-s" />
+          <img id="modelImage" src="./assets/images/menu-s.avif" alt="car-model" />
         </div>
 
         <h3>Buscar hora y ubicación</h3>
@@ -253,6 +253,7 @@
           <input
             class="search-input"
             type="search"
+            name="search"
             placeholder="Código postal"
           />
           <img src="./assets/images/search.png" alt="search" />
@@ -278,12 +279,12 @@
           <div class="name-container">
             <div class="input-container">
               <label for="email">Dirección de correo electrónico</label>
-              <input type="email" id="email" name="email" required />
+              <input type="email" id="email" name="email" required autocomplete="email"/>
             </div>
 
             <div class="input-container">
               <label for="phone">Número de teléfono</label>
-              <input type="tel" id="phone" name="phone" list="telslist" />
+              <input type="tel" id="phone" name="phone" list="telslist" autocomplete="tel"/>
             </div>
 
             <datalist id="telslist">
@@ -309,8 +310,8 @@
           </div>
 
           <div class="input-container">
-            <label for="telefono">Región</label>
-            <select>
+            <label for="region">Región</label>
+            <select id="region" autocomplete="region">
               <option value="1" selected>Colombia</option>
               <option value="2">Brasil</option>
               <option value="3">Argentina</option>
@@ -417,5 +418,9 @@
         <li><a href="/">Ubicaciones</a></li>
       </ul>
     </footer>
+
+
+
+    <script src="./main.js"></script>
   </body>
 </html>
