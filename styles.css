@@ -42,6 +42,10 @@ h3 {
   cursor: pointer;
 }
 
+.hidden-desktop {
+  display: none;
+}
+
 .header-container video {
   width: 100vw;
   height: 100vh;
@@ -345,7 +349,7 @@ form .btn3:hover {
 /* ------------SOLAR-SECTION-------------- */
 
 .solar-section {
-  background-image: url("./assets/images/Homepage-SolarPanels.avif");
+  background-image: url("./assets/images/homepage.avif");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -462,4 +466,44 @@ footer .nav-list {
 
 footer .nav-list li a {
   color: #c4c3c5;
+}
+
+/* ---------MEDIA-QUERIES-------- */
+
+@media only screen and (max-width: 767px) {
+  body {
+    border: solid 5px red;
+  }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  #logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .icon-container {
+    display: none;
+  }
+
+  .toggle-button {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+  }
+
+  .toggle-button:hover {
+    color: #e0e0e0;
+  }
 }
