@@ -36,8 +36,7 @@ h3 {
   top: 0;
   left: 0;
   right: 0;
-  background-color: transparent;
-  margin-top: -0.5rem;
+  background-color: transparent; 
   z-index: 10;
   cursor: pointer;
 }
@@ -471,12 +470,49 @@ footer .nav-list li a {
 /* ---------MEDIA-QUERIES-------- */
 
 @media only screen and (max-width: 767px) {
-  body {
-    border: solid 5px red;
+
+  #logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .icon-container {
+    display: none;
+  }
+
+  .nav-container {    
+    margin: 0 1rem    
+  }
+
+  .toggle-button {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: 2px solid #e0e0e0;
+    border-radius: 3px;
+    font-size: 1rem;    
+    color: white;
+  }
+
+  .hero-video {    
+    bottom: 10rem;
+    margin-left: 1rem;
+  }
+
+  .hero-video h2 {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  
+  .hero-video p {
+    width: 90%;
+    font-size: 0.8rem;
   }
 }
-
-
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
@@ -497,9 +533,9 @@ footer .nav-list li a {
     text-align: center;
     cursor: pointer;
     background: none;
-    border: none;
-    font-size: 1.2rem;
-    margin-top: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 3px;
+    font-size: 1.2rem;    
     color: white;
   }
 

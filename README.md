@@ -12,8 +12,8 @@ El objetivo de este proyecto diseñar una landingpage con la apariencia y alguna
 - Secciones para mostrar diferentes modelos de vehículos.
 - Enlaces de navegación para acceder a las diferentes partes del sitio.
 
-## Visita la pagina en:
+## Visita la página en:
 
-[https://adrianfeloh1.github.io/proyecto-tesla/]
+https://adrianfeloh1.github.io/proyecto-tesla/
 
 ![tesla](assets/images/home-tesla.png)
