@@ -36,7 +36,7 @@ h3 {
   top: 0;
   left: 0;
   right: 0;
-  background-color: transparent; 
+  background-color: transparent;
   z-index: 10;
   cursor: pointer;
 }
@@ -470,7 +470,6 @@ footer .nav-list li a {
 /* ---------MEDIA-QUERIES-------- */
 
 @media only screen and (max-width: 767px) {
-
   #logo {
     font-size: 1.3rem;
   }
@@ -483,8 +482,8 @@ footer .nav-list li a {
     display: none;
   }
 
-  .nav-container {    
-    margin: 0 1rem    
+  .nav-container {
+    margin: 0 1rem;
   }
 
   .toggle-button {
@@ -494,11 +493,11 @@ footer .nav-list li a {
     background: none;
     border: 2px solid #e0e0e0;
     border-radius: 3px;
-    font-size: 1rem;    
+    font-size: 1rem;
     color: white;
   }
 
-  .hero-video {    
+  .hero-video {
     bottom: 10rem;
     margin-left: 1rem;
   }
@@ -507,15 +506,85 @@ footer .nav-list li a {
     font-size: 1.5rem;
     width: 90%;
   }
-  
+
   .hero-video p {
     width: 90%;
     font-size: 0.8rem;
   }
+
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  /* ------------MAIN-MOBILE----------- */
+
+  .section-container {
+    display: flex;
+    flex-direction: column;    
+  }
+
+  .model-container {
+    width: 90vw;
+    color: #1a1a1a;
+  }
+
+  .model-info h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .model-info img {
+    display: none;
+  }
+
+  .video-container {
+    width: 90vw;
+  }
+
+  .video-container video {
+    max-width: 100%;
+  }
+
+  .model-cybertruck p{
+    margin-bottom: -5rem;
+  }
+
+  /* ----------CHARGE-SECTION-TABLET----------*/
+
+  .charge-section {    
+    height: 1500px;
+  }
+    
+  .charge-title p {
+    width: 70vw;
+  }
+  
+  .cards-container {
+    flex-direction: column;
+  } 
+
+  /* --------------FOOTER---------------*/
+  
+  footer {    
+    height: 430px;
+  }
+  
+  footer .tesla-privacy {    
+    width: 80%;    
+  }
+  
+  footer .nav-list {
+    margin: auto;
+    display: block;
+  }  
+
+  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
   #logo {
     font-size: 1.3rem;
   }
@@ -535,11 +604,74 @@ footer .nav-list li a {
     background: none;
     border: 2px solid #e0e0e0;
     border-radius: 3px;
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
     color: white;
   }
 
   .toggle-button:hover {
     color: #e0e0e0;
   }
+
+  /* ------------MAIN-TABLET----------- */
+
+  .section-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .model-container {
+    width: 90vw;
+    color: #1a1a1a;
+  }
+
+  .model-info h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .model-info img {
+    display: none;
+  }
+
+  .video-container {
+    width: 90vw;
+  }
+
+  .video-container video {
+    max-width: 100%;
+  }
+
+  .model-cybertruck p{
+    margin-bottom: -5rem;
+  }
+
+  /* ----------CHARGE-SECTION-TABLET----------*/
+
+  .charge-section {    
+    height: 1500px;
+  }
+    
+  .charge-title p {
+    width: 70vw;
+  }
+  
+  .cards-container {
+    flex-direction: column;
+  } 
+
+  /* --------------FOOTER---------------*/
+  
+  footer {    
+    height: 450px;
+  }
+  
+  footer .tesla-privacy {    
+    width: 80%;    
+  }
+  
+  footer .nav-list {
+    margin: auto;
+    display: block;
+  }  
+  
 }
