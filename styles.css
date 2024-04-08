@@ -93,14 +93,14 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .section-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
 }
 
 .reverse {
@@ -175,6 +175,7 @@ h3 {
 
 .cybertruck-section {
   background-color: #121113;
+  padding-top: 2rem;
 }
 
 .cybertruck-section .button-container {
@@ -476,6 +477,7 @@ footer .nav-list li a {
 
   .header-container video {
     margin-bottom: 1rem;
+    height: 50vh;    
   }
 
   .nav-list {
@@ -530,6 +532,8 @@ footer .nav-list li a {
   .section-container {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    margin-top: -2rem;
   }
 
   .model-container {
@@ -539,20 +543,20 @@ footer .nav-list li a {
 
   .model-info h2 {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.8rem;    
   }
 
   .model-info p {
-    margin-bottom: -1rem;
+    margin-bottom: 2rem;
     font-size: 0.8rem;
   }
 
   .model-info img {
-    display: none;
+    width: 90vw;
   }
 
   .video-container {
-    width: 90vw;
+    display: none;
   }
 
   .video-container video {
@@ -566,8 +570,11 @@ footer .nav-list li a {
     font-size: 0.8rem;
   }
 
-  .model-cybertruck p {
-    margin-bottom: -3rem;
+  .cybertruck-section {
+    margin-top: 0;
+  }  
+
+  .model-cybertruck p {    
     font-size: 0.8rem;
   }
 
@@ -698,14 +705,9 @@ form .btn3 {
 
 /* --------------SOLAR-MOBILE------------ */
 
-.solar-section-text h2 {
-  font-size: 1.8rem;
-}
-
 .solar-section-text p {
   margin-top: 1rem;
 }
-
 
   /* --------CHARGE-SECTION-MOBILE---------*/
 
@@ -797,11 +799,11 @@ form .btn3 {
   }
 
   .model-info img {
-    display: none;
+    width: 90vw;
   }
 
   .video-container {
-    width: 90vw;
+    display: none;
   }
 
   .video-container video {
