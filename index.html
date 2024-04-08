@@ -26,7 +26,7 @@
       <nav class="nav-container">
         <h2 id="logo">TESLA</h2>
 
-        <ul class="nav-list">
+        <ul class="nav-list hidden-tablet">
           <li><a href="/">Vehículos</a></li>
           <li><a href="/">Energía</a></li>
           <li><a href="/">Carga</a></li>
@@ -34,7 +34,9 @@
           <li><a href="/">Tienda</a></li>
         </ul>
 
-        <div class="icon-container">
+        <button class="toggle-button hidden-desktop">Menú</button>
+
+        <div class="icon-container hidden-tablet">
           <img src="./assets/images/question-white.svg" alt="icono pregunta" />
 
           <img src="./assets/images/globe-white.svg" alt="icono globo" />
@@ -236,12 +238,24 @@
         </div>
         <div class="demo-btn-img">
           <div class="btn-model-container">
-            <button class="model-btn" onclick="changeModel('s')">Model S</button>
-            <button class="model-btn" onclick="changeModel('3')">Model 3</button>
-            <button class="model-btn" onclick="changeModel('x')">Model X</button>
-            <button class="model-btn" onclick="changeModel('y')">Model Y</button>
+            <button class="model-btn" onclick="changeModel('s')">
+              Model S
+            </button>
+            <button class="model-btn" onclick="changeModel('3')">
+              Model 3
+            </button>
+            <button class="model-btn" onclick="changeModel('x')">
+              Model X
+            </button>
+            <button class="model-btn" onclick="changeModel('y')">
+              Model Y
+            </button>
           </div>
-          <img id="modelImage" src="./assets/images/menu-s.avif" alt="car-model" />
+          <img
+            id="modelImage"
+            src="./assets/images/menu-s.avif"
+            alt="car-model"
+          />
         </div>
 
         <h3>Buscar hora y ubicación</h3>
@@ -279,12 +293,24 @@
           <div class="name-container">
             <div class="input-container">
               <label for="email">Dirección de correo electrónico</label>
-              <input type="email" id="email" name="email" required autocomplete="email"/>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+              />
             </div>
 
             <div class="input-container">
               <label for="phone">Número de teléfono</label>
-              <input type="tel" id="phone" name="phone" list="telslist" autocomplete="tel"/>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                list="telslist"
+                autocomplete="tel"
+              />
             </div>
 
             <datalist id="telslist">
@@ -409,7 +435,7 @@
         </p>
       </div>
 
-      <ul class="nav-list">
+      <ul class="nav-list nav-footer-list">
         <li><a href="/">Tesla &copy; 2024</a></li>
         <li><a href="/">Privacidad y Legalidad</a></li>
         <li><a href="/">Llamadas a revisión de vehículos</a></li>
@@ -418,8 +444,6 @@
         <li><a href="/">Ubicaciones</a></li>
       </ul>
     </footer>
-
-
 
     <script src="./main.js"></script>
   </body>

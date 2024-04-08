@@ -458,7 +458,7 @@ footer .tesla-privacy {
   padding: 1rem;
 }
 
-footer .nav-list {
+footer .nav-footer-list {
   justify-content: center;
   padding-bottom: 1.5rem;
 }
@@ -467,11 +467,15 @@ footer .nav-list li a {
   color: #c4c3c5;
 }
 
-/* ---------MEDIA-QUERIES-------- */
+/* ---------MEDIA-QUERIES-MOBILE-------- */
 
 @media only screen and (max-width: 767px) {
   #logo {
     font-size: 1.3rem;
+  }
+
+  .header-container video {
+    margin-bottom: 1rem;
   }
 
   .nav-list {
@@ -490,11 +494,13 @@ footer .nav-list li a {
     display: block;
     text-align: center;
     cursor: pointer;
-    background: none;
-    border: 2px solid #e0e0e0;
-    border-radius: 3px;
+    background: none; 
+    border: 1px solid #cccccc00;
+    border-radius: 5px;
     font-size: 1rem;
     color: white;
+    padding: 0.4rem 1rem;    
+    backdrop-filter: blur(100px);
   }
 
   .hero-video {
@@ -503,7 +509,7 @@ footer .nav-list li a {
   }
 
   .hero-video h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     width: 90%;
   }
 
@@ -523,7 +529,7 @@ footer .nav-list li a {
 
   .section-container {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
   }
 
   .model-container {
@@ -533,7 +539,12 @@ footer .nav-list li a {
 
   .model-info h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+  }
+
+  .model-info p {
+    margin-bottom: -1rem;
+    font-size: 0.8rem;
   }
 
   .model-info img {
@@ -548,40 +559,84 @@ footer .nav-list li a {
     max-width: 100%;
   }
 
-  .model-cybertruck p{
-    margin-bottom: -5rem;
+  .button-container button {
+    width: 142px;
+    padding: 12px 5px;
+    margin-top: 2rem;    
+    font-size: 0.8rem;
   }
+
+  .model-cybertruck p {
+    margin-bottom: -3rem;
+    font-size: 0.8rem;
+  }
+
+  .demo-text h2{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .demo-text p{
+    text-align: center;
+    font-size: 0.8rem;    
+  }
+
+  .btn-model-container {
+    display: flex; 
+    flex-direction: row; 
+    gap: 0.5rem;
+  }
+
+  .demo-btn-img {
+    flex-direction: column;    
+  }
+
+  .demo-btn-img img{
+    margin: auto;   
+    width: 360px
+  }
+
+  .model-btn {    
+    padding: 12px 0;
+    transition: none;
+    width: 100px;
+    font-size: 0.8rem;
+  }
+
+
 
   /* ----------CHARGE-SECTION-TABLET----------*/
 
-  .charge-section {    
+  .charge-section {
     height: 1500px;
   }
-    
+
   .charge-title p {
     width: 70vw;
   }
-  
+
   .cards-container {
     flex-direction: column;
-  } 
+  }
+
+  
 
   /* --------------FOOTER---------------*/
-  
-  footer {    
+
+  footer {
     height: 430px;
   }
-  
-  footer .tesla-privacy {    
-    width: 80%;    
-  }
-  
-  footer .nav-list {
-    margin: auto;
-    display: block;
-  }  
 
-  
+  footer .tesla-privacy {
+    width: 80%;
+  }
+
+  footer .nav-footer-list {
+    margin: auto;
+    text-align: center;
+    display: block;
+  }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -601,11 +656,13 @@ footer .nav-list li a {
     display: block;
     text-align: center;
     cursor: pointer;
-    background: none;
-    border: 2px solid #e0e0e0;
-    border-radius: 3px;
-    font-size: 1.2rem;
+    background: none; 
+    border: 1px solid #cccccc00;
+    border-radius: 5px;
+    font-size: 1rem;
     color: white;
+    padding: 0.4rem 1rem;    
+    backdrop-filter: blur(100px);
   }
 
   .toggle-button:hover {
@@ -641,37 +698,38 @@ footer .nav-list li a {
     max-width: 100%;
   }
 
-  .model-cybertruck p{
+  .model-cybertruck p {
     margin-bottom: -5rem;
   }
 
   /* ----------CHARGE-SECTION-TABLET----------*/
 
-  .charge-section {    
+  .charge-section {
     height: 1500px;
   }
-    
+
   .charge-title p {
     width: 70vw;
   }
-  
+
   .cards-container {
     flex-direction: column;
-  } 
+  }
 
   /* --------------FOOTER---------------*/
-  
-  footer {    
+
+  footer {
     height: 450px;
   }
-  
-  footer .tesla-privacy {    
-    width: 80%;    
+
+  footer .tesla-privacy {
+    width: 80%;
   }
-  
-  footer .nav-list {
+
+  footer .nav-footer-list {
     margin: auto;
+    text-align: center;
     display: block;
-  }  
-  
+  }
+
 }
