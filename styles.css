@@ -571,13 +571,25 @@ footer .nav-list li a {
     font-size: 0.8rem;
   }
 
+  .demo-drive {    
+    width: 95vw;
+  }
+
+  .demo-h {
+    margin-left: 1rem;
+  }
+
+  .demo-p {
+    margin-left: 1rem;
+  }
+
   .demo-text h2{
-    text-align: center;
+    margin-left: 1rem;
     font-size: 1.5rem;
   }
 
   .demo-text p{
-    text-align: center;
+    margin-left: 1rem;
     font-size: 0.8rem;    
   }
 
@@ -588,43 +600,141 @@ footer .nav-list li a {
   }
 
   .demo-btn-img {
-    flex-direction: column;    
+    flex-direction: column;        
   }
 
   .demo-btn-img img{
     margin: auto;   
-    width: 360px
+    width: 340px
   }
 
   .model-btn {    
-    padding: 12px 0;
+    padding: 10px 0;
     transition: none;
-    width: 100px;
+    width: 70px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+  }
+
+  .demo-drive p{    
     font-size: 0.8rem;
   }
 
+  .search-input {    
+    padding: 10px 10px 10px 40px;    
+    width: 180px;    
+  }
+
+  .search-container {    
+    margin-left: 1rem;    
+  }
+
+  .search-container ::placeholder {
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .search-container img {    
+    top: 18px;
+    left: 7px;    
+  }
+
+  /* ---------------FORM------------------ */
+
+.section-form {  
+  width: 95vw;  
+}
+
+form h2 {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;  
+}
+
+.input-container {  
+  margin-top: 0rem;
+}
+
+.input-container input {  
+  width: 280px;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input-container select {    
+  margin-top: 1rem;  
+  width: 130px;  
+}
+
+.checkbox-container {
+  width: 95vw; 
+  margin-left: 1rem; 
+}
+
+.checkbox-container input {  
+  height: 1rem;  
+}
+
+.checkbox-container p {    
+  width: 90%;   
+}
+
+form .btn3 {  
+  padding: 10px 20px;    
+  transition: none;
+  margin-left: 1rem;
+}
+
+/* --------------SOLAR-MOBILE------------ */
+
+.solar-section-text h2 {
+  font-size: 1.8rem;
+}
+
+.solar-section-text p {
+  margin-top: 1rem;
+}
 
 
-  /* ----------CHARGE-SECTION-TABLET----------*/
+  /* --------CHARGE-SECTION-MOBILE---------*/
 
   .charge-section {
     height: 1500px;
   }
 
+  .charge-title h3 {
+    font-size: 1.5rem;
+  }
+
   .charge-title p {
-    width: 70vw;
+    font-size: 0.8rem;
+    margin: auto;
+    width: 90%;
   }
 
   .cards-container {
     flex-direction: column;
   }
 
-  
+  .cards p {
+    font-size: 0.8rem;
+  }
 
   /* --------------FOOTER---------------*/
 
   footer {
-    height: 430px;
+    height: 480px;
   }
 
   footer .tesla-privacy {
@@ -635,8 +745,8 @@ footer .nav-list li a {
     margin: auto;
     text-align: center;
     display: block;
+    margin-top: -1rem;
   }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
