@@ -26,7 +26,7 @@
       <nav class="nav-container">
         <h2 id="logo">TESLA</h2>
 
-        <ul class="nav-list hidden-tablet">
+        <ul class="nav-list hidden-tablet" id="navList" >
           <li><a href="/">Vehículos</a></li>
           <li><a href="/">Energía</a></li>
           <li><a href="/">Carga</a></li>
@@ -34,7 +34,9 @@
           <li><a href="/">Tienda</a></li>
         </ul>
 
-        <button class="toggle-button hidden-desktop">Menú</button>
+        <button class="toggle-button hidden-desktop" onclick="toggleMenu()">
+          Menú
+        </button>
 
         <div class="icon-container hidden-tablet">
           <img src="./assets/images/question-white.svg" alt="icono pregunta" />
@@ -238,16 +240,16 @@
         </div>
         <div class="demo-btn-img">
           <div class="btn-model-container">
-            <button class="model-btn" onclick="changeModel('s')">
+            <button class="model-btn" onclick="changeImageModel('s')">
               Model S
             </button>
-            <button class="model-btn" onclick="changeModel('3')">
+            <button class="model-btn" onclick="changeImageModel('3')">
               Model 3
             </button>
-            <button class="model-btn" onclick="changeModel('x')">
+            <button class="model-btn" onclick="changeImageModel('x')">
               Model X
             </button>
-            <button class="model-btn" onclick="changeModel('y')">
+            <button class="model-btn" onclick="changeImageModel('y')">
               Model Y
             </button>
           </div>
