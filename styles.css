@@ -19,6 +19,7 @@ h3 {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 10px;
+  cursor: pointer;
 }
 
 .header-container {
@@ -38,7 +39,11 @@ h3 {
   right: 0;
   background-color: transparent;
   z-index: 10;
-  cursor: pointer;
+}
+
+.container-menu {
+  display: flex;
+  align-items: center;
 }
 
 .hidden-desktop {
@@ -55,21 +60,26 @@ h3 {
 .nav-list {
   display: flex;
   padding: 0;
+
 }
 
 .nav-list li {
   list-style: none;
   margin: 0 1rem;
+  cursor: pointer;
+
 }
 
 .nav-list li a {
   text-decoration: none;
   color: white;
+
 }
 
 .icon-container img {
   width: 20px;
   margin-left: 0.7rem;
+  cursor: pointer;
 }
 
 .hero-video {
@@ -471,17 +481,37 @@ footer .nav-list li a {
 /* ---------MEDIA-QUERIES-MOBILE-------- */
 
 @media only screen and (max-width: 767px) {
+  
+  .container-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
   #logo {
-    font-size: 1.3rem;
+    font-size: 1.3rem;    
   }
 
   .header-container video {
     margin-bottom: 1rem;
-    height: 50vh;    
+    height: 50vh;
+  }  
+  
+  .nav-container {
+    display: block;
+    
   }
 
   #navList {
-    display: none;
+    display: none;   
+    text-align: center;
+    margin-top: -0.5rem;     
+  }
+
+  #navList li {
+    padding: 5px 0;    
+    width: 200px;
+    margin: auto;
   }
 
   .icon-container {
@@ -492,16 +522,16 @@ footer .nav-list li a {
     margin: 0 1rem;
   }
 
-  .toggle-button {
+  .toggle-button {    
     display: block;
     text-align: center;
     cursor: pointer;
-    background: none; 
+    background: none;
     border: 1px solid #cccccc00;
     border-radius: 5px;
     font-size: 1rem;
     color: white;
-    padding: 0.4rem 1rem;    
+    padding: 0.4rem 1rem;
     backdrop-filter: blur(100px);
   }
 
@@ -512,7 +542,7 @@ footer .nav-list li a {
 
   .hero-video h2 {
     margin-bottom: -1rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     width: 90%;
   }
 
@@ -546,7 +576,7 @@ footer .nav-list li a {
 
   .model-info h2 {
     text-align: center;
-    font-size: 1.8rem;    
+    font-size: 1.8rem;
   }
 
   .model-info p {
@@ -569,19 +599,19 @@ footer .nav-list li a {
   .button-container button {
     width: 142px;
     padding: 12px 5px;
-    margin-top: 2rem;    
+    margin-top: 2rem;
     font-size: 0.8rem;
   }
 
   .cybertruck-section {
     margin-top: 0;
-  }  
+  }
 
-  .model-cybertruck p {    
+  .model-cybertruck p {
     font-size: 0.8rem;
   }
 
-  .demo-drive {    
+  .demo-drive {
     width: 95vw;
   }
 
@@ -593,32 +623,32 @@ footer .nav-list li a {
     margin-left: 1rem;
   }
 
-  .demo-text h2{
+  .demo-text h2 {
     margin-left: 1rem;
     font-size: 1.5rem;
   }
 
-  .demo-text p{
+  .demo-text p {
     margin-left: 1rem;
-    font-size: 0.8rem;    
+    font-size: 0.8rem;
   }
 
   .btn-model-container {
-    display: flex; 
-    flex-direction: row; 
+    display: flex;
+    flex-direction: row;
     gap: 0.5rem;
   }
 
   .demo-btn-img {
-    flex-direction: column;        
+    flex-direction: column;
   }
 
-  .demo-btn-img img{
-    margin: auto;   
+  .demo-btn-img img {
+    margin: auto;
     width: 340px
   }
 
-  .model-btn {    
+  .model-btn {
     padding: 10px 0;
     transition: none;
     width: 70px;
@@ -626,17 +656,17 @@ footer .nav-list li a {
     border-radius: 5px;
   }
 
-  .demo-drive p{    
+  .demo-drive p {
     font-size: 0.8rem;
   }
 
-  .search-input {    
-    padding: 10px 10px 10px 40px;    
-    width: 180px;    
+  .search-input {
+    padding: 10px 10px 10px 40px;
+    width: 180px;
   }
 
-  .search-container {    
-    margin-left: 1rem;    
+  .search-container {
+    margin-left: 1rem;
   }
 
   .search-container ::placeholder {
@@ -644,73 +674,73 @@ footer .nav-list li a {
     font-family: "Poppins", sans-serif;
   }
 
-  .search-container img {    
+  .search-container img {
     top: 18px;
-    left: 7px;    
+    left: 7px;
   }
 
   /* ---------------FORM------------------ */
 
-.section-form {  
-  width: 95vw;  
-}
+  .section-form {
+    width: 95vw;
+  }
 
-form h2 {
-  font-size: 1.5rem;
-  margin-left: 1rem;
-}
+  form h2 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
 
-.name-container {
-  display: flex;
-  flex-direction: column;  
-  align-items: center;  
-}
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.input-container {  
-  margin-top: 0rem;
-}
+  .input-container {
+    margin-top: 0rem;
+  }
 
-.input-container input {  
-  width: 280px;
-}
+  .input-container input {
+    width: 280px;
+  }
 
-.select-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
+  .select-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 
-.input-container select {    
-  margin-top: 1rem;  
-  width: 130px;  
-}
+  .input-container select {
+    margin-top: 1rem;
+    width: 130px;
+  }
 
-.checkbox-container {
-  width: 95vw; 
-  margin-left: 1rem; 
-}
+  .checkbox-container {
+    width: 95vw;
+    margin-left: 1rem;
+  }
 
-.checkbox-container input {  
-  height: 1rem;  
-}
+  .checkbox-container input {
+    height: 1rem;
+  }
 
-.checkbox-container p {    
-  width: 90%;   
-}
+  .checkbox-container p {
+    width: 90%;
+  }
 
-form .btn3 {  
-  padding: 10px 20px;    
-  transition: none;
-  margin-left: 1rem;
-}
+  form .btn3 {
+    padding: 10px 20px;
+    transition: none;
+    margin-left: 1rem;
+  }
 
-/* --------------SOLAR-MOBILE------------ */
+  /* --------------SOLAR-MOBILE------------ */
 
-.solar-section-text p {
-  margin-top: 1rem;
-}
+  .solar-section-text p {
+    margin-top: 1rem;
+  }
 
   /* --------CHARGE-SECTION-MOBILE---------*/
 
@@ -759,9 +789,27 @@ form .btn3 {
     font-size: 1.3rem;
   }
 
-  .nav-list {
-    display: none;
+  .container-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  .nav-container {
+    display: block;
+  }
+
+  #navList {
+    display: none;   
+    text-align: center;
+    margin-top: -0.5rem; 
+  }
+
+  #navList li {
+    padding: 8px 0;
+    width: 200px;
+    margin: auto;
+  }  
 
   .icon-container {
     display: none;
@@ -771,12 +819,12 @@ form .btn3 {
     display: block;
     text-align: center;
     cursor: pointer;
-    background: none; 
+    background: none;
     border: 1px solid #cccccc00;
     border-radius: 5px;
     font-size: 1rem;
     color: white;
-    padding: 0.4rem 1rem;    
+    padding: 0.4rem 1rem;
     backdrop-filter: blur(100px);
   }
 
@@ -785,6 +833,7 @@ form .btn3 {
   }
 
   /* ------------MAIN-TABLET----------- */
+  
 
   .section-container {
     display: flex;
