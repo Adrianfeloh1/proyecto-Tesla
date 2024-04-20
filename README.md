@@ -14,6 +14,6 @@ El objetivo de este proyecto diseñar una landingpage con la apariencia y alguna
 
 ## Visita la página en:
 
-https://adrianfeloh1.github.io/proyecto-tesla/
+https://tesla-adrian8.netlify.app
 
 ![tesla](assets/images/home-tesla.png)
