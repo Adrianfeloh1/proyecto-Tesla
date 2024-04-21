@@ -482,10 +482,7 @@ footer .nav-list li a {
 
 @media only screen and (max-width: 767px) {
 
-  body {
-    overflow-y: hidden;
-  }
-  
+   
   .container-menu {
     display: flex;
     justify-content: space-between;
@@ -790,10 +787,7 @@ footer .nav-list li a {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-  body {
-    overflow-y: hidden;
-  }
-
+ 
   #logo {
     font-size: 1.3rem;
   }

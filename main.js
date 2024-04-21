@@ -19,7 +19,6 @@ const toggleMenu = () => {
   : "block"
 }
 
-
 const changeImageModel = (model) => {
   /* cambio el atributo de la ruta de la imagen */
   imageModel.src = "./assets/images/menu-" + model + ".avif";
